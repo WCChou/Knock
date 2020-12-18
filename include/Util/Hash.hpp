@@ -16,6 +16,7 @@ constexpr size_t Sha256DigestLength = 32;
 std::string fileSha256( const boost::filesystem::path& filePath );
 std::string bufferSha256( const std::vector<unsigned char>& buf );
 std::string bufferSha256( const void* pBuf, size_t bufSize );
+std::string stringSha256( const std::string& str );
 
 } // Knock::Hash
 

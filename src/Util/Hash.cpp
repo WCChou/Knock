@@ -70,5 +70,10 @@ std::string bufferSha256( const void* pBuf, size_t bufSize )
     return NoCheck::bufferSha256( pBuf, bufSize );
 }
 
+std::string stringSha256( const std::string& str )
+{
+    return bufferSha256( str.data(), str.length() );
+}
+
 } // Knock::Hash
 } // Knock
